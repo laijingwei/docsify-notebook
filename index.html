@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title>经纬笔记</title>
+  <link rel="icon" href="favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="assets/cdn/theme-simple.css">
+  <style>
+    :root {
+      --base-font-size: 16px;
+      --theme-color : #319795 !important;
+    }
+
+    body {
+      position: relative;
+    }
+    .indicator {
+      position: absolute;
+      top: 0; right: 0; left: 0; bottom: 0;
+      background: linear-gradient(to right top, #319795 50%, transparent 50%) no-repeat;
+      background-size: 100% calc(100% - 100vh);
+      z-index: 50;
+      pointer-events: none;
+      mix-blend-mode: darken;
+    }
+    .indicator::after {
+      content: '';
+      position: fixed;
+      top: 5px; bottom: 0; right: 0; left: 0;
+      background: #fff;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="indicator"></div>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '经纬笔记',
+      repo: 'https://laijw.com',
+      themeColor: '#319795',
+      loadSidebar: true,
+      mergeNavbar: true,
+      maxLevel: 4,
+      subMaxLevel: 0,
+      auto2top: true,
+      loadNavbar: true,
+      alias: {
+        '/.*/_navbar.md': '/_navbar.md'
+      },
+      autoHeader: true,
+      coverpage: false,
+      onlyCover: true,
+      coverpage: 'README.md',
+      search: {
+        placeholder: '搜索',
+        paths: 'auto',
+        noData: '没有找到搜索结果！',
+        depth: 2
+      },
+      pagination: {
+        previousText: '上一篇',
+        nextText: '下一篇',
+      },
+      themeable: {
+          readyTransition : true,
+          responsiveTables: true
+      },
+      plantuml: {
+        skin: 'default',
+        // serverPath: 'http://192.168.142.129:8080/svg/'
+        serverPath: 'http://www.plantuml.com/plantuml/svg/'
+      },
+      routerMode: 'hash',
+    }
+  </script>
+  <script src="assets/cdn/docsify.min.js"></script>
+  <script src="assets/cdn/docsify-themeable@0.js"></script>
+  <script src="assets/cdn/search.min.js"></script>
+  <script src="assets/cdn/docsify-copy-code.min.js"></script>
+  <script src="assets/cdn/prism-bash.js"></script>
+  <script src="assets/cdn/zoom-image.js"></script>
+  <script src="assets/cdn/docsify-pagination.min.js"></script>
+  <script src="assets/cdn/docsify-plantuml.min.js"></script>
+
+</body>
+
+</html>
