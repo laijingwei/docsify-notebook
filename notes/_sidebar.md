@@ -1,5 +1,4 @@
 - [目录](/notes/_sidebar)
-- [密码库](/notes/laijw/password)
 - 赖经纬
   - [Vue 笔记](/notes/laijw/vue)
   - [Nodejs 笔记](/notes/laijw/nodejs)
