@@ -16,23 +16,6 @@
 - GIT的内容完整性要优于SVN：GIT的内容存储使用的是SHA-1哈希算法。这能确保代码内容的完整性，确保在遇到磁盘故障和网络问题时降低对版本库的破坏。
 
 
-## Gitlab
-
-```
-/etc/gitlab
-
-# 以下为阿里云企业邮箱的配置
-
-gitlab_rails['gitlab_email_from'] = 'git@wlizm.com'
-gitlab_rails['smtp_enable'] = true
-gitlab_rails['smtp_address'] = "smtpdm.aliyun.com"
-gitlab_rails['smtp_port'] = 80
-gitlab_rails['smtp_user_name'] = "git@wlizm.com"
-gitlab_rails['smtp_password'] = "Sdsf2018git"
-gitlab_rails['smtp_domain'] = "wlizm.com"
-gitlab_rails['smtp_authentication'] = "login"
-```
-
 ## Git 命令
 
 
