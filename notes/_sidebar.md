@@ -1,21 +1,27 @@
 - [目录](/notes/_sidebar)
-- 赖经纬
+- **赖经纬**
+- 前端
   - [Vue 笔记](/notes/laijw/vue)
-  - [Nodejs 笔记](/notes/laijw/nodejs)
   - [NPM 笔记](/notes/laijw/npm)
   - [React 笔记](/notes/laijw/react)
   - [Tailwind 笔记](/notes/laijw/tailwind)
-  - [接口规范](/notes/laijw/api)
   - [Git 入门](/notes/laijw/git)
   - [Git 高级](/notes/laijw/git-tips)
+  - [Windows 笔记](/notes/laijw/windows)
+  - [Mac 笔记](/notes/laijw/mac)
+- 后端
+  - [Linux 笔记](/notes/laijw/linux)
+  - [Vagrant 笔记](/notes/laijw/vagrant)
+  - [Jenkins 笔记](/notes/laijw/jenkins)
+  - [zsh 笔记](/notes/laijw/zsh)
+  - [Docker 笔记](/notes/laijw/docker)
+  - [Rust 笔记](/notes/laijw/rust)
+  - [Nodejs 笔记](/notes/laijw/nodejs)
+  - [Go 笔记](/notes/laijw/go)
+  - [接口规范](/notes/laijw/api)
   - [Web 演变](/notes/laijw/web)
   - [CORS 跨域](/notes/laijw/cors)
-  - [Windows 笔记](/notes/laijw/windows)
-  - [Linux 笔记](/notes/laijw/linux)
-  - [Mac 笔记](/notes/laijw/mac)
-  - [Rust 笔记](/notes/laijw/rust)
-  - [Go 笔记](/notes/laijw/go)
-- Wiki
+- **陈俊汝**
   - [CSS-Background属性详解](/notes/junruchen/CSS-Background属性详解)
   - [CSS-Background神奇的渐变色](/notes/junruchen/CSS-Background神奇的渐变色)
   - [CSS-Border用法详解](/notes/junruchen/CSS-Border用法详解)
