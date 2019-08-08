@@ -477,7 +477,7 @@ Consolas, ‘Courier New’, monospace
 
 ## gosuv
 
-> GO语言重写的类supervisor的一个进程管理程序
+> [gosuv](https://github.com/codeskyblue/gosuv)，GO语言重写的类supervisor的一个进程管理程序
 
 ```bash
 # 安装

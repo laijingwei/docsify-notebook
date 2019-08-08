@@ -2,8 +2,10 @@
 - **赖经纬**
 - 前端
   - [Vue 笔记](/notes/laijw/vue)
-  - [NPM 笔记](/notes/laijw/npm)
+  - [Quasar 笔记](/notes/laijw/quasar)
   - [React 笔记](/notes/laijw/react)
+  - [Flutter 笔记](/notes/laijw/flutter)
+  - [NPM 笔记](/notes/laijw/npm)
   - [Tailwind 笔记](/notes/laijw/tailwind)
   - [Git 入门](/notes/laijw/git)
   - [Git 高级](/notes/laijw/git-tips)
