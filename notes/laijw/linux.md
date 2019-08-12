@@ -367,6 +367,16 @@ tar -zxvf /home/nas/zip/gogs_linux_amd64.tar.gz -C /home/git
 https://localhost:3000/
 ```
 
+## filebrowser
+
+```bash
+tar -zxvf /home/nas/go/linux-amd64-filebrowser.tar.gz -C /home/filebrowser/
+cd /home/filebrowser/
+./filebrowser -r / -a 0.0.0.0 -p 4000
+
+https://localhost:4000/
+```
+
 ## bandzip
 
 ```bash
