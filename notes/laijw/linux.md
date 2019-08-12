@@ -373,6 +373,7 @@ https://localhost:3000/
 tar -zxvf /home/nas/go/linux-amd64-filebrowser.tar.gz -C /home/filebrowser/
 cd /home/filebrowser/
 ./filebrowser -r / -a 0.0.0.0 -p 4000
+admin/admin
 
 https://localhost:4000/
 ```
