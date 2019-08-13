@@ -36,8 +36,16 @@ adb connect 127.0.0.1:7555
 adb shell
 
 # 连接夜神模拟器
+
+# adb.exe 复制替换 nox_adb.exe
+C:\Users\LJW\AppData\Local\Android\Sdk\platform-tools\adb.exe
+D:\down\install\Nox\bin\nox_adb.exe
+
 cd D:\down\install\Nox\bin
 nox_adb.exe connect 127.0.0.1:62001
+
+# 弹出调试菜单
+adb shell input keyevent 82
 ```
 
 

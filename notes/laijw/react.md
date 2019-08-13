@@ -73,6 +73,9 @@ Hit the Run button
 cd D:\WWW\567\a567
 Have an Android emulator running (quickest way to get started), or a device connected
 react-native run-android
+
+yarn add react-native-gesture-handler
+react-native link react-native-gesture-handler
 ```
 
 ## dva
