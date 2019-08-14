@@ -43,9 +43,6 @@ D:\down\install\Nox\bin\nox_adb.exe
 
 cd D:\down\install\Nox\bin
 nox_adb.exe connect 127.0.0.1:62001
-
-# 弹出调试菜单
-adb shell input keyevent 82
 ```
 
 

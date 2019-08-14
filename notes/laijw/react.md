@@ -74,6 +74,9 @@ cd D:\WWW\567\a567
 Have an Android emulator running (quickest way to get started), or a device connected
 react-native run-android
 
+# 模拟器弹出调试菜单
+adb shell input keyevent 82
+
 yarn add react-native-gesture-handler
 react-native link react-native-gesture-handler
 ```
