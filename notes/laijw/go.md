@@ -37,6 +37,164 @@ hugo new post/hello.md
 hugo server -D
 ```
 
+
+## Code Server
+
+> [Code Server](https://github.com/cdr/code-server/releases)，在线版本的 VS Code
+
+### 安装
+
+```bash
+cd /home
+wget https://github.com/cdr/code-server/releases/download/1.1156-vsc1.33.1/code-server1.1156-vsc1.33.1-linux-x64.tar.gz
+tar -xvf code-server1.1156-vsc1.33.1-linux-x64.tar.gz
+mv code-server1.1156-vsc1.33.1-linux-x64 code-server
+cd code-server
+```
+
+### lib64
+
+> code-server 依赖的 C++ 编译器
+
+```bash
+
+cd /home
+
+# 此处我的安装路径为 /home/lib64
+wget https://adbin.top/packages/lib64.tar.gz
+tar -xvf lib64.tar.gz
+
+cd /usr/lib64
+cp libstdc++.so.6 libstdc++.so.6.bak
+rm libstdc++.so.6
+
+# ln -s (对应路径)/libstdc++.so.6.0.25（对应版本即可，gcc8.2.0带的是libstdc++.so.6.0.25） libstdc++.so.6
+ln -s /home/lib64/libstdc++.so.6.0.25 libstdc++.so.6
+
+# 赋予权限
+chmod -R 777 ./code-server
+```
+
+### 启动
+
+```bash
+
+# 启动目录
+./code-server /www/wwwroot/a805/front/ --no-auth
+
+https://localhost:8443/
+
+# 字体配置
+Consolas, ‘Courier New’, monospace
+```
+
+
+## gosuv
+
+> [gosuv](https://github.com/codeskyblue/gosuv)，GO语言重写的类supervisor的一个进程管理程序
+
+```bash
+# 安装
+curl https://raw.githubusercontent.com/codeskyblue/gosuv/master/get.sh | bash
+
+# 启动
+gosuv start-server
+
+http://localhost:11313/
+```
+
+## webhook
+
+> [webhook](https://github.com/adnanh/webhook)，使用 Go 语言写的 webhook
+
+```bash
+./webhook -hooks hooks.json -port 8444 -hotreload -verbose
+```
+
+**hooks.json**
+
+```json
+[
+  {
+    "id": "test",
+    "execute-command": "/home/webhook/redeploy.sh",
+    "command-working-directory": "/home/webhook",
+    "response-message": "I got the payload!"
+  }
+]
+```
+
+
+## Hugo
+
+> [Hugo](https://github.com/gohugoio/hugo)，基于 Go 的博客编译器
+
+```bash
+wget https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.tar.gz
+tar -zxvf ./hugo_0.55.6_Linux-64bit.tar.gz
+cp ./hugo /usr/local/bin/
+```
+
+## Gogs
+
+> [Gogs](https://github.com/gogs/gogs)，基于 Go 的 Git 服务器，类似项目有 [Gitee](https://github.com/go-gitea/gitea)
+
+```bash
+adduser git
+su git
+cd ~
+tar -zxvf /home/nas/zip/gogs_linux_amd64.tar.gz -C /home/git
+
+https://localhost:3000/
+```
+
+## FRP
+
+> [FRP](https://github.com/fatedier/frp)，内网穿透工具，类似项目有 [NPS](https://github.com/cnlh/nps)
+
+```bash
+# 服务端启动 frps
+./frps -c ./frps.ini
+
+# 客户端启动 frpc
+./frpc -c ./frpc.ini
+```
+
+## Annie
+
+> [Annie](https://github.com/iawia002/annie)，视频下载工具
+
+```bash
+annie -F list.txt
+```
+
+## File Browser
+
+> [File Browser](https://github.com/filebrowser/filebrowser)，基于 Go 的开源网盘
+
+```bash
+tar -zxvf /home/nas/go/linux-amd64-filebrowser.tar.gz -C /home/filebrowser/
+cd /home/filebrowser/
+./filebrowser -r / -a 0.0.0.0 -p 4000
+admin/admin
+
+https://localhost:4000/
+```
+
+## bandzip
+
+> 开源解压软件
+
+```bash
+# 压缩
+bc a -fmt:zip hello .
+
+# 解压
+bc x hello.zip
+```
+
+
+
 ## 路线图
 
 ![Roadmap](../assets/golang-developer-roadmap-zh-CN.png)

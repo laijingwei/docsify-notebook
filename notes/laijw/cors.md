@@ -99,7 +99,7 @@ CORS验证机制需要客户端和服务的协同处理。
 
 ## Vue 服务器 Nginx 代理
 
-> [Nginx 配置](/notes/back/linux?id=nginx)
+> [Nginx 配置](/notes/laijw/linux?id=nginx)
 
 ```bash
 # 跨域设置
@@ -109,6 +109,21 @@ CORS验证机制需要客户端和服务的协同处理。
         proxy_pass_header Set-Cookie;
         proxy_set_header Host a582.mxnt.net;
     }
+```
+
+## Vue 服务器 Apache 代理
+
+> 可通过宝塔面板配置
+
+```bash
+#PROXY-START/api
+	<IfModule mod_proxy.c>
+	    ProxyRequests Off
+	    SSLProxyEngine on
+	    ProxyPass /api http://api.comeally.com/
+	    ProxyPassReverse /api http://api.comeally.com/
+    </IfModule>
+	#PROXY-END/api
 ```
 
 ## Vue 本地 Node.js 代理

@@ -348,45 +348,6 @@ systemctl stop firewalld
 systemctl disable firewalld
 ```
 
-## Hugo
-
-```bash
-wget https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.tar.gz
-tar -zxvf ./hugo_0.55.6_Linux-64bit.tar.gz
-cp ./hugo /usr/local/bin/
-```
-
-## Gogs
-
-```bash
-adduser git
-su git
-cd ~
-tar -zxvf /home/nas/zip/gogs_linux_amd64.tar.gz -C /home/git
-
-https://localhost:3000/
-```
-
-## filebrowser
-
-```bash
-tar -zxvf /home/nas/go/linux-amd64-filebrowser.tar.gz -C /home/filebrowser/
-cd /home/filebrowser/
-./filebrowser -r / -a 0.0.0.0 -p 4000
-admin/admin
-
-https://localhost:4000/
-```
-
-## bandzip
-
-```bash
-# 压缩
-bc a -fmt:zip hello .
-
-# 解压
-bc x hello.zip
-```
 
 ## Termux
 
@@ -438,88 +399,6 @@ chown -R www docute-notebook
 chgrp -R www docute-notebook
 ```
 
-## code-server
-
-### 安装
-
-[下载地址](https://github.com/cdr/code-server/releases)
-
-```bash
-cd /home
-wget https://github.com/cdr/code-server/releases/download/1.1156-vsc1.33.1/code-server1.1156-vsc1.33.1-linux-x64.tar.gz
-tar -xvf code-server1.1156-vsc1.33.1-linux-x64.tar.gz
-mv code-server1.1156-vsc1.33.1-linux-x64 code-server
-cd code-server
-```
-
-### lib64
-
-```bash
-
-cd /home
-
-# 此处我的安装路径为 /home/lib64
-wget https://adbin.top/packages/lib64.tar.gz
-tar -xvf lib64.tar.gz
-
-cd /usr/lib64
-cp libstdc++.so.6 libstdc++.so.6.bak
-rm libstdc++.so.6
-
-# ln -s (对应路径)/libstdc++.so.6.0.25（对应版本即可，gcc8.2.0带的是libstdc++.so.6.0.25） libstdc++.so.6
-ln -s /home/lib64/libstdc++.so.6.0.25 libstdc++.so.6
-
-# 赋予权限
-chmod -R 777 ./code-server
-```
-
-### 启动
-
-```bash
-
-# 启动目录
-./code-server /www/wwwroot/a805/front/ --no-auth
-
-https://localhost:8443/
-
-# 字体配置
-Consolas, ‘Courier New’, monospace
-```
-
-## gosuv
-
-> [gosuv](https://github.com/codeskyblue/gosuv)，GO语言重写的类supervisor的一个进程管理程序
-
-```bash
-# 安装
-curl https://raw.githubusercontent.com/codeskyblue/gosuv/master/get.sh | bash
-
-# 启动
-gosuv start-server
-
-http://localhost:11313/
-```
-
-## webhook
-
-> [Github](https://github.com/adnanh/webhook)
-
-```bash
-./webhook -hooks hooks.json -port 8444 -hotreload -verbose
-```
-
-**hooks.json**
-
-```json
-[
-  {
-    "id": "test",
-    "execute-command": "/home/webhook/redeploy.sh",
-    "command-working-directory": "/home/webhook",
-    "response-message": "I got the payload!"
-  }
-]
-```
 
 ## 宝塔 Webhook
 
