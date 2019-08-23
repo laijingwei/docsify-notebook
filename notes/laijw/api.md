@@ -293,7 +293,7 @@ chrome://serviceworker-internals
 
 **一、json_encode()**
 
-```php {.line-numbers}
+```php
 <?php
   $arr = array ('a'=>1,'b'=>2,'c'=>3,'d'=>4,'e'=>5);
   echo json_encode($arr);
@@ -302,13 +302,13 @@ chrome://serviceworker-internals
 
 输出
 
-```php {.line-numbers}
+```php
 {"a":1,"b":2,"c":3,"d":4,"e":5}
 ```
 
 再看一个对象转换的例子：
 
-```php {.line-numbers}
+```php
 $obj->body           = 'another post';
 $obj->id             = 21;
 $obj->approved       = true;
@@ -319,7 +319,7 @@ echo json_encode($obj);
 
  输出
 
-```php {.line-numbers}
+```php
 {
 　　　"body":"another post",
 　
@@ -343,7 +343,7 @@ PHP 支持两种数组，一种是只保存 "值"（value）的索引数组（in
 
 比如，现在有一个索引数组
 
-```php {.line-numbers}
+```php
 $arr = Array('one', 'two', 'three');
  
 echo json_encode($arr);
@@ -351,14 +351,14 @@ echo json_encode($arr);
 
  输出
 
-```php {.line-numbers}
+```php
 ["one","two","three"]
 ```
 
 
  如果将它改为关联数组：
 
-```php {.line-numbers}
+```php
 $arr = Array('1'=>'one', '2'=>'two', '3'=>'three');
 　
 echo json_encode($arr);
@@ -366,7 +366,7 @@ echo json_encode($arr);
 
  输出变为
 
-```php {.line-numbers}
+```php
 {"1":"one","2":"two","3":"three"}
 ```
 
@@ -374,13 +374,13 @@ echo json_encode($arr);
 
 如果你需要将 "索引数组" 强制转化成 "对象"，可以这样写
 
-```php {.line-numbers}
+```php
 	json_encode( (object)$arr );
 ```
 
  或者
 
-```php {.line-numbers}
+```php
 json_encode ( $arr, JSON_FORCE_OBJECT );
 ```
 
@@ -388,7 +388,7 @@ json_encode ( $arr, JSON_FORCE_OBJECT );
 
 下面是一个 PHP 的类：
 
-```php {.line-numbers}
+```php
 class Foo {
  
 　　const     ERROR_CODE = '404';
@@ -410,7 +410,7 @@ class Foo {
 
  现在，对这个类的实例进行 json 转换：
 
-```php {.line-numbers}
+```php
 $foo = new Foo;
  
 $foo_json = json_encode($foo);
@@ -420,7 +420,7 @@ echo $foo_json;
 
  输出结果是
 
-```php {.line-numbers}
+```php
 {"public_ex":"this is public"}
 ```
 
@@ -430,7 +430,7 @@ echo $foo_json;
 
 该函数用于将 json 文本转换为相应的 PHP 数据结构。下面是一个例子：
 
-```php {.line-numbers}
+```php
 $json = '{"foo": 12345}';
 　
 $obj = json_decode($json);
@@ -440,7 +440,7 @@ print $obj->{'foo'}; // 12345
 
  通常情况下，json_decode() 总是返回一个 PHP 对象，而不是数组。比如：
 
-```php {.line-numbers}
+```php
 $json = '{"a":1,"b":2,"c":3,"d":4,"e":5}';
 　
 var_dump(json_decode($json));
@@ -448,7 +448,7 @@ var_dump(json_decode($json));
 
  结果就是生成一个 PHP 对象：
 
-```php {.line-numbers}
+```php
 object(stdClass)#1 (5) {
  
 　　["a"] => int(1)
@@ -462,7 +462,7 @@ object(stdClass)#1 (5) {
 
  如果想要强制生成 PHP 关联数组，json_decode() 需要加一个参数 true：
 
-```php {.line-numbers}
+```php
 $json = '{"a":1,"b":2,"c":3,"d":4,"e":5}';
 　　
 var_dump(json_decode($json,true));
@@ -470,7 +470,7 @@ var_dump(json_decode($json,true));
 
  结果就生成了一个关联数组：
 
-```php {.line-numbers}
+```php
 array(5) {
  
  　　["a"] => int(1)
@@ -486,7 +486,7 @@ array(5) {
 
 下面三种 json 写法都是错的，你能看出错在哪里吗？
 
-```php {.line-numbers}
+```php
 $bad_json = "{ 'bar': 'baz' }";
  
 $bad_json = '{ bar: "baz" }';
@@ -500,6 +500,6 @@ $bad_json = '{ "bar": "baz", }';
 
 另外，json 只能用来表示对象（object）和数组（array），如果对一个字符串或数值使用 json_decode()，将会返回 null。
 
-```php {.line-numbers}
+```php
 var_dump(json_decode("Hello World")); //null
 ```
