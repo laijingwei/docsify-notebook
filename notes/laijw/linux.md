@@ -1,19 +1,5 @@
 # 服务器
 
-## Chrome
-
-```js
-chrome://about
-chrome://serviceworker-internals
-```
-
-[微信开发者调试](http://debugtbs.qq.com/)
-
-## 微擎 FTP 路径
-
-```bash
-/data/wwwroot/a554.mxnt.net/addons/ewei_shopv2/core/mobile/member
-```
 
 ## SSH
 
@@ -446,3 +432,13 @@ http://192.168.1.100:8888/hook?access_key=iDO5X0LNRhMNn68v7e7StZGVCjigTxqQ1Lebkz
 ```
 
 !> 新增钩子后记得重启宝塔面板
+
+## 腾讯图床防盗链
+
+```bash
+http://img01.store.sogou.com/net/a/04/link?appid=100520029&url=
+```
+
+```bash
+<meta name="referrer" content="no-referrer"/>
+```

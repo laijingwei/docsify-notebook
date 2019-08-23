@@ -21,7 +21,6 @@
   - [Nodejs 笔记](/notes/laijw/nodejs)
   - [Go 笔记](/notes/laijw/go)
   - [接口规范](/notes/laijw/api)
-  - [Web 演变](/notes/laijw/web)
   - [CORS 跨域](/notes/laijw/cors)
 - **陈俊汝**
   - [CSS-Background属性详解](/notes/junruchen/CSS-Background属性详解)
