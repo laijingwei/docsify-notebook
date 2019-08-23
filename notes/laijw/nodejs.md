@@ -187,59 +187,6 @@ views: Random.integer(100,5000),
 images: images.slice(0,Random.integer(1,3))
 ```
 
-## composer
-
-> PHP 包管理器
-
-```bash
-# composer 中国镜像
-composer config -gl
-composer config -g repo.packagist composer https://packagist.phpcomposer.com
-composer require ..
-```
-
-## lumen
-
-> 基于 Laravel 的轻量框架
-
-```bash
-composer global require "laravel/lumen-installer"
-lumen new blog
-php -S localhost:8000 -t public
-```
-
-## laravel
-
-> PHP MVC 框架
-
-```bash
-composer global require laravel/installer
-laravel new blog
-php artisan serve
-php artisan list
-php artisan make:controller API/PhotoController --api --model=Models/Photo
-php artisan make:migration create_photos_table
-php artisan migrate
-php artisan make:seeder PhotosTableSeeder
-php artisan db:seed
-
-Route::namespace('API')->group(function () {
-    Route::apiResource('photos', 'PhotoController');
-});
-
-http://127.0.0.1:8000/api/photos
-```
-
-> Actions Handled By Resource Controller
-
-| Verb      | URI             | Action  | Route Name     |
-| --------- | --------------- | ------- | -------------- |
-| GET       | /photos         | index   | photos.index   |
-| POST      | /photos         | store   | photos.store   |
-| GET       | /photos/{photo} | show    | photos.show    |
-| PUT/PATCH | /photos/{photo} | update  | photos.update  |
-| DELETE    | /photos/{photo} | destroy | photos.destroy |
-
 ## adonis
 
 > 类 laravel 的 node.js 框架

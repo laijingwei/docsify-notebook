@@ -19,6 +19,7 @@
   - [Docker 笔记](/notes/laijw/docker)
   - [Rust 笔记](/notes/laijw/rust)
   - [Nodejs 笔记](/notes/laijw/nodejs)
+  - [PHP 笔记](/notes/laijw/php)
   - [Go 笔记](/notes/laijw/go)
   - [接口规范](/notes/laijw/api)
   - [CORS 跨域](/notes/laijw/cors)
