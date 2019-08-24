@@ -3,16 +3,24 @@
 
 ## SSH
 
-```bash
-# putty
--pw Aa86536@@ root@120.79.2.244
- 
-#  ssh
-ssh root@192.168.1.100
+### putty
 
-# 554 部署
-cd /www/wwwroot/a554m.mxnt.net
-git pull origin master
+```bash
+# 快捷方式目标后添加，-pw前面要有空格
+-pw 123456@@ root@192.168.1.100
+ ```
+
+### ssh
+
+```bash
+# 生成 ssh 公钥
+ssh-keygen -t rsa -C "laijingwei1993@163.com"
+
+# 上传公钥至服务器
+ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.1.100
+
+# ssh 连接服务器
+ssh root@192.168.1.100
 ```
 
 ## yum
