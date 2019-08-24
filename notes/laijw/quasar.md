@@ -16,14 +16,14 @@ CLASSPATH
 
 # Android环境变量
 ANDROID_HOME
-C:\Users\LJW\AppData\Local\Android\Sdk
+%USERPROFILE%\AppData\Local\Android\Sdk
 
 # path
 %ANDROID_HOME%\tools
 %ANDROID_HOME%\platform-tools
 
 # 启动Android模拟器
-C:\Users\LJW\AppData\Local\Android\Sdk\tools\emulator.exe -netdelay none -netspeed full -avd Pixel_2_API_27
+%USERPROFILE%\AppData\Local\Android\Sdk\tools\emulator.exe -netdelay none -netspeed full -avd Pixel_2_API_27
 
 java -version
 
@@ -38,7 +38,7 @@ adb shell
 # 连接夜神模拟器
 
 # adb.exe 复制替换 nox_adb.exe
-C:\Users\LJW\AppData\Local\Android\Sdk\platform-tools\adb.exe
+%USERPROFILE%\AppData\Local\Android\Sdk\platform-tools\adb.exe
 D:\down\install\Nox\bin\nox_adb.exe
 
 cd D:\down\install\Nox\bin
@@ -182,7 +182,7 @@ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.
 #### zipalign 目录
 
 ```bash
-C:\Users\LJW\AppData\Local\Android\Sdk\build-tools\28.0.3
+%USERPROFILE%\AppData\Local\Android\Sdk\build-tools\28.0.3
 ```
 
 #### zipalign 优化 apk

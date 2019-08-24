@@ -27,14 +27,14 @@ d:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDe
 
 | 变量名             | 变量值                                         |
 | ------------------ | ---------------------------------------------- |
-| CARGO_HOME         | C:\Users\LJW\\.cargo                            |
+| CARGO_HOME         | %USERPROFILE%\.cargo                            |
 | RUSTUP_DIST_SERVER | https://mirrors.ustc.edu.cn/rust-static        |
 | RUSTUP_UPDATE_ROOT | https://mirrors.ustc.edu.cn/rust-static/rustup |
 
 
 ### 配置文件
 
-``"C:\Users\LJW\.cargo\config"``
+``"%USERPROFILE%\.cargo\config"``
 
 ```bash
 [registry]

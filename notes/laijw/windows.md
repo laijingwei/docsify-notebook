@@ -305,7 +305,7 @@ dism.exe /online /enable-feature /featurename:netfx3 /Source:L:\sources\sxs
 ## Listary 备份目录
 
 ```bash
-C:\Users\LJW\AppData\Roaming\Listary\UserData
+%USERPROFILE%\AppData\Roaming\Listary\UserData
 ```
 
 ### 彻底关闭 Hyper-V 服务

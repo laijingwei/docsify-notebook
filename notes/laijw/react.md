@@ -47,7 +47,7 @@ yarn global add mirror-config-china
 > License for package Android SDK Build-Tools 28.0.2 not accepted
 
 ```bash
-cd C:\Users\LJW\AppData\Local\Android\Sdk\tools\bin
+%USERPROFILE%\AppData\Local\Android\Sdk\tools\bin
 sdkmanager --licenses
 ```
 
