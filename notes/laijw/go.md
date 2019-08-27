@@ -19,22 +19,21 @@ git init
 git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock
 git submodule init
 git submodule update
-cp themes/docdock/exampleSite/config.toml .
+copy themes\docdock\exampleSite\config.toml .
 
 hugo new post/hello.md
 hugo server -D
 ```
 
-###  ananke
+###  academic
 
 ```bash
-hugo new site blog
-cd blog/themes
-git clone https://github.com/budparr/gohugo-theme-ananke.git
-copy themes\gohugo-theme-ananke\exampleSite\config.toml .
+git clone https://github.com/sourcethemes/academic-kickstart.git My_Website
+cd My_Website
+git submodule update --init --recursive
+xcopy themes\academic\exampleSite\* . /e /Y /d
 
-hugo new post/hello.md
-hugo server -D
+hugo
 ```
 
 
