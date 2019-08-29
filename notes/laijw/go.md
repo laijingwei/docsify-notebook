@@ -102,6 +102,48 @@ gosuv start-server
 http://localhost:11313/
 ```
 
+## syncthing
+
+> [Syncthing](https://github.com/syncthing/syncthing) 是一个开源的同步工具，支持多版本控制，同时支持Windows、Mac OS X、Linux等客户端，和Resilio有点类似
+
+```bash
+# 安装
+tar -zxvf /home/nas/zip/syncthing-linux-amd64-v1.2.2-rc.3.tar.gz -C /home/
+
+# 新建一个用户运行 Syncthing，不要直接以root运行
+adduser git
+su git
+./syncthing
+```
+
+出现 `INFO: Detected 0 NAT services` 代表启动成功
+
+**修改配置文件**
+
+```bash
+vim /home/git/.config/syncthing/config.xml
+
+# 将 127.0.0.1:8384 改为 0.0.0.0:8384
+
+http://localhost:8384/
+```
+
+**开放端口**
+
+Syncthing默认监听以下几个端口
+
+```bash
+22000 (TCP)
+8384 (TCP)
+21027 (UDP)
+44647 (UDP)
+```
+
+个人使用只开放 22000 (TCP) 与 8384 (TCP)
+
+> 8384 是Web访问控制端口
+> 22000 是节点访问端口
+
 ## webhook
 
 > [webhook](https://github.com/adnanh/webhook)，使用 Go 语言写的 webhook
@@ -142,7 +184,7 @@ cp ./hugo /usr/local/bin/
 adduser git
 su git
 cd ~
-tar -zxvf /home/nas/zip/gogs_linux_amd64.tar.gz -C /home/git
+tar -zxvf /home/nas/zip/gogs_linux_amd64.tar.gz -C /home/git/
 
 https://localhost:3000/
 ```
