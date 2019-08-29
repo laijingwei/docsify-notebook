@@ -4,6 +4,7 @@
   - [Vue 笔记](/notes/laijw/vue)
   - [Quasar 笔记](/notes/laijw/quasar)
   - [React 笔记](/notes/laijw/react)
+  - [Taro 笔记](/notes/laijw/taro)
   - [Flutter 笔记](/notes/laijw/flutter)
   - [NPM 笔记](/notes/laijw/npm)
   - [Tailwind 笔记](/notes/laijw/tailwind)
