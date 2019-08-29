@@ -102,6 +102,20 @@ gosuv start-server
 http://localhost:11313/
 ```
 
+## gohttpserver
+
+> [gohttpserver](https://github.com/codeskyblue/gohttpserver)，GO语言HTTP文件服务器
+
+```bash
+# 安装
+tar -zxvf /home/nas/zip/gohttpserver_1.0.5_linux_amd64.zip -C /home/
+
+# 启动
+./gohttpserver -r ./ --port 8000 --upload
+
+http://localhost:8000/
+```
+
 ## syncthing
 
 > [Syncthing](https://github.com/syncthing/syncthing) 是一个开源的同步工具，支持多版本控制，同时支持Windows、Mac OS X、Linux等客户端，和Resilio有点类似
@@ -238,7 +252,7 @@ bc x hello.zip
 
 ## 路线图
 
-![Roadmap](../assets/golang-developer-roadmap-zh-CN.png)
+![Roadmap]http://static.mxnt.net/img/golang-developer-roadmap-zh-CN.png)
 
 ## 资源
 

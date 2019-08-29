@@ -144,11 +144,11 @@ EA7E-1153259
 
 1. 中间白线
 
-![](../assets/2019-06-17-18-57-01.png)
+![][1]
 
 2. 分号
 
-![](../assets/2019-06-17-18-53-10.png)
+![][2]
 
 ## Chrome 插件
 
@@ -267,9 +267,9 @@ EA7E-1153259
 
 使用正则表达式的子模式:   $1 表示第一个括号中的内容（即整行的内容）
 
-![](../assets/2019-02-21-15-32-18.png)
+![][3]
 
-![](../assets/2019-02-21-15-32-38.png)
+![][4]
 
 ## powershell
 ```bash
@@ -315,3 +315,11 @@ bcdedit /set hypervisorlaunchtype off
 ```
 
 > [Windows 10 下如何彻底关闭 Hyper-V 服务(翻外篇)](https://blog.csdn.net/l1028386804/article/details/78838399)
+
+
+
+
+[1]: http://static.mxnt.net/img/2019-06-17-18-57-01.png
+[2]: http://static.mxnt.net/img/2019-06-17-18-53-10.png
+[3]: http://static.mxnt.net/img/2019-02-21-15-32-18.png
+[4]: http://static.mxnt.net/img/2019-02-21-15-32-38.png

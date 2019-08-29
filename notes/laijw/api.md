@@ -2,7 +2,7 @@
 
 ## 开发流程
 
-![](../assets/2062729-46838a6013bfc55d.png)
+![][1]
 
 ## HTTP API 协议
 
@@ -10,13 +10,13 @@
 
 Representational State Transfer, RESTful 一组架构约束条件和原则, 在 2000 年由 Roy Fielding 提出
 
-![](../assets/1547513768123.png)
+![][2]
 
 ###  GraphQL
 
 GraphQL 是一个用于 API 的查询语言, 在 2015 年由 Facebook 开源
 
-![](../assets/1547513768234.png)
+![][3]
 
 ## 规范原则
 
@@ -25,7 +25,7 @@ GraphQL 是一个用于 API 的查询语言, 在 2015 年由 Facebook 开源
 - 前端关注交互、渲染逻辑，尽量避免业务逻辑处理的出现；
 - 请求响应传输数据格式：JSON，JSON数据尽量简单轻量，避免多级JSON的出现；
 
-![](../assets/2062729-cbc42c9b88dd22a9.png)
+![][4]
 
 
 ## 请求基本格式
@@ -38,7 +38,7 @@ xxx/login?body={"username":"admin","password":"123456","captcha":"scfd","remembe
 
 ### POST请求
 
-![](../assets/2062729-9fe293e81fba56a2.png)
+![][5]
 
 ## 响应格式
 
@@ -148,7 +148,7 @@ xxx/login?body={"username":"admin","password":"123456","captcha":"scfd","remembe
 
 ## 接口错误状态码
 
-![](../assets/2019-02-23-09-04-20.png)
+![][6]
 
 ### 前端接收错误状态码
 
@@ -202,20 +202,20 @@ xxx/login?body={"username":"admin","password":"123456","captcha":"scfd","remembe
 ## Web 研发模式的演变
 
 ### 简单明快的早期时代
-![](../assets/63918611gw1efj2vqv7htj20f20ajta4.jpg)
+![][7]
 
 ### 后端为主的 MVC 时代
-![](../assets/63918611gw1efj2vset36j20f009stad.jpg)
+![][8]
 
 ### Ajax 带来的 SPA 时代
-![](../assets/63918611gw1efj2vtkiivj20ey0aj0ue.jpg)
+![][9]
 
 ### 前端为主的 MVVM（Model-View-ViewModel） 时代
-![](../assets/63918611gw1efj2vu7wcvj20f00agdhq.jpg)
-![](../assets/63918611gw1efj2vv9crfj20f10amabl.jpg)
+![][10]
+![][11]
 
 ### Node 带来的全栈时代
-![](../assets/63918611gw1efj2vvjwtfj20ge0gzab9.jpg)
+![][12]
 
 
 > - [前后分离接口规范](https://www.jianshu.com/p/c81008b68350?from=timeline)
@@ -230,3 +230,17 @@ chrome://serviceworker-internals
 ```
 
 [微信开发者调试](http://debugtbs.qq.com/)
+
+
+[1]: http://static.mxnt.net/img/2062729-46838a6013bfc55d.png
+[2]: http://static.mxnt.net/img/1547513768123.png
+[3]: http://static.mxnt.net/img/1547513768234.png
+[4]: http://static.mxnt.net/img/2062729-cbc42c9b88dd22a9.png
+[5]: http://static.mxnt.net/img/2062729-9fe293e81fba56a2.png
+[6]: http://static.mxnt.net/img/2019-02-23-09-04-20.png
+[7]: http://static.mxnt.net/img/63918611gw1efj2vqv7htj20f20ajta4.jpg
+[8]: http://static.mxnt.net/img/63918611gw1efj2vset36j20f009stad.jpg
+[9]: http://static.mxnt.net/img/63918611gw1efj2vtkiivj20ey0aj0ue.jpg
+[10]: http://static.mxnt.net/img/63918611gw1efj2vu7wcvj20f00agdhq.jpg
+[11]: http://static.mxnt.net/img/63918611gw1efj2vv9crfj20f10amabl.jpg
+[12]: http://static.mxnt.net/img/63918611gw1efj2vvjwtfj20ge0gzab9.jpg

@@ -49,22 +49,22 @@ vi /etc/sysconfig/jenkins
 
 1. 打开刚创建的任务，选择配置，添加远程仓库地址，配置登录名及密码及分支。
 
-![添加仓库地址](../assets/162c4b63c9152782.png)
+![添加仓库地址]http://static.mxnt.net/img/162c4b63c9152782.png)
 
 2. 安装Generic Webhook Trigger Plugin插件（系统管理-插件管理-搜索Generic Webhook Trigger Plugin）如果可选插件列表为空，点击高级标签页，替换升级站点的URL为：`http://mirror.xmission.com/jenkins/updates/update-center.json`并且点击提交和立即获取。
 
 3. 添加触发器
 第2步安装的触发器插件功能很强大，可以根据不同的触发参数触发不同的构建操作，比如我向远程仓库提交的是master分支的代码，就执行代码部署工作，我向远程仓库提交的是某个feature分支，就执行单元测试，单元测试通过后合并至dev分支。灵活性很高，可以自定义配置适合自己公司的方案，这里方便演示我们不做任何条件判断，只要有提交就触发。在任务配置里勾选Generic Webhook Trigger即可
 
-![添加触发器](../assets/162c4c36ea15b935.png)
+![添加触发器]http://static.mxnt.net/img/162c4c36ea15b935.png)
 
 4. 仓库配置钩子 此处以码云为例，github的配置基本一致，进入码云项目主页后，点击管理-webhooks-添加，会跳出一个这样的框来。
 
-![仓库配置钩子](../assets/162c4cfe042bba32.png)
+![仓库配置钩子]http://static.mxnt.net/img/162c4cfe042bba32.png)
 
 URL格式为 `http://<User ID>:<API Token>@<Jenkins IP地址>:端口/generic-webhook-trigger/invoke` userid和api token在jenkins的系统管理-管理用户-admin-设置里，这是我的
 
-![URL格式](../assets/162c4d8b530af3a0.png)
+![URL格式]http://static.mxnt.net/img/162c4d8b530af3a0.png)
 
 Jenkins IP地址和端口是你部署jenkins服务器的ip地址，端口号没改过的话就是8080。
 密码填你和上面userid对应的密码，我这里是root。
@@ -73,11 +73,11 @@ Jenkins IP地址和端口是你部署jenkins服务器的ip地址，端口号没�
 
 5. 测试钩子
 
-![测试钩子](../assets/162c4df2c9b49941.png)
+![测试钩子]http://static.mxnt.net/img/162c4df2c9b49941.png)
 
 点击测试，如果配置是成功的，你的Jenkins左侧栏构建执行状态里将会出现一个任务。
 
-![测试钩子](../assets/162c4e3169a3c1f3.png)
+![测试钩子]http://static.mxnt.net/img/162c4e3169a3c1f3.png)
 
 另外，你也可以试下本地提交代码，提交代码后，jenkins也会开始一个任务,目前我们没有配置任务开始后让它做什么，所以默认它只会在你提交新代码后，将新代码拉取到jenkins服务器上。到此为止，git钩子我们配置完成。
 
@@ -110,7 +110,7 @@ Timeout (ms)：超时时间（毫秒）默认300000
 
 4. 配置完成后，点击Test Configuration测试一下是否可以连接上，如果成功会返回success，失败会返回报错信息，根据报错信息改正即可。
 
-![返回信息](../assets/162c7bb52a7713be.png)
+![返回信息]http://static.mxnt.net/img/162c7bb52a7713be.png)
 
 5. 点击构建后操作，增加构建后操作步骤，选择send build artificial over SSH， 参数说明：
 
@@ -123,7 +123,7 @@ Exec command ：传输完了要执行的命令，我这里执行了解压缩和�
 复制代码
 ```
 
-![参数说明](../assets/162c7c7caf0713f5.png)
+![参数说明]http://static.mxnt.net/img/162c7c7caf0713f5.png)
 
 ### 配置列表
 

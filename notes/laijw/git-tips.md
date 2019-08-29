@@ -547,10 +547,13 @@ git push -f <remote-name> <branch-name>
 
 ## 一图详解
 
-![](../assets/git.png)
+![][1]
 
 ## 联系我
 - 博客园：[削微寒](http://www.cnblogs.com/xueweihan/)
 - 或者直接提Pr，Issues
 
 **[⬆ 返回顶部](#目录)**
+
+
+[1]: http://static.mxnt.net/img/git.png
