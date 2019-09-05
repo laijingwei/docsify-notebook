@@ -108,10 +108,10 @@
 * 父级元素使用flex布局；
 * 除特殊项外子元素不需要设置宽度，只需要设置 `flex-grow: 1`就可以实现均分效果。`flex-grow` 设置扩展比例，即剩余空间的分配比率。
 
-[image1]: ../assets/1500315-c0710d355d691c8e.png
-[image2]: ../assets/1500315-1cb4ec255177082b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/500
-[image3]: ../assets/1500315-e9906573f6325f8d.png
-[image4]: ../assets/1500315-3780035bcf9976e4.png
+[image1]: http://static.mxnt.net/img/1500315-c0710d355d691c8e.png
+[image2]: http://static.mxnt.net/img/1500315-1cb4ec255177082b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/500
+[image3]: http://static.mxnt.net/img/1500315-e9906573f6325f8d.png
+[image4]: http://static.mxnt.net/img/1500315-3780035bcf9976e4.png
 
 [link1]: (https://junruchen.github.io/css/demo/css-flex-usage1.html)
 [link2]: (https://github.com/junruchen/junruchen.github.io/wiki/CSS-Flex%E5%B8%83%E5%B1%80%E5%B1%9E%E6%80%A7%E6%95%B4%E7%90%86)

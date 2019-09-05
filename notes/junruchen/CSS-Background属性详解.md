@@ -169,7 +169,7 @@ background: url("image.png") 0% 0%/60px 60px no-repeat padding-box,
 [image2]: http://img.mukewang.com/589982cd000181ca05330255.png
 [image3]: http://img.mukewang.com/5899839e0001399004870264.png
 [image4]: http://img.mukewang.com/589984030001fa4804950267.png
-[image5]: ../assets/16276023edd33290.png
+[image5]: http://static.mxnt.net/img/16276023edd33290.png
 [image6]: http://img.mukewang.com/589984910001e0ab07160290.png
 
 [link1]: https://github.com/junruchen/junruchen.github.io/wiki/CSS-Background%E7%A5%9E%E5%A5%87%E7%9A%84%E6%B8%90%E5%8F%98%E8%89%B2

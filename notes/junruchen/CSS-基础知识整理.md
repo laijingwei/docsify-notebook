@@ -201,6 +201,6 @@ IE盒子模型的区别是，content区域包含border和padding
   2、background-position-x/background-position-x在版本稍低的firefox中不支持，可选择使用background-position
 ```
 
-[image1]: ../assets/1500315-3deb84742151e74d.png
-[image2]: ../assets/1500315-74686c292b221f54.png
+[image1]: http://static.mxnt.net/img/1500315-3deb84742151e74d.png
+[image2]: http://static.mxnt.net/img/1500315-74686c292b221f54.png
 

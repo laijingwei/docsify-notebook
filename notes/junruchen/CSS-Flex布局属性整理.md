@@ -211,19 +211,19 @@ Flex布局
 
 如果想了解更多关于Flex布局的内容，可以查看[Flex布局常见应用][link2]
 
-[image1]: ../assets/1500315-ae4221ba84201761.png
-[image2]: ../assets/1500315-0f557e69efb8d339.png
-[image3]: ../assets/1500315-7d21694a786b11b6.png
-[image4]: ../assets/1500315-697872b571e8bde8.png
-[image5]: ../assets/1500315-8bbfb0edf27b8ce7.png
-[image6]: ../assets/1500315-cedce0a496df3c74.png
-[image7]: ../assets/1500315-e2f6331d9f1a960e.png
-[image8]: ../assets/1500315-83fc5339890ff1f7.png
-[image9]: ../assets/1500315-95e8d3492d9ad9bb.png
-[image10]: ../assets/1500315-a7f3503e0c708b8d.png
-[image11]: ../assets/1500315-174c4c96c1b7ff91.png
-[image12]: ../assets/1500315-817e044ac869be24.png
-[image13]: ../assets/1500315-6a9274535cf2f280.png
+[image1]: http://static.mxnt.net/img/1500315-ae4221ba84201761.png
+[image2]: http://static.mxnt.net/img/1500315-0f557e69efb8d339.png
+[image3]: http://static.mxnt.net/img/1500315-7d21694a786b11b6.png
+[image4]: http://static.mxnt.net/img/1500315-697872b571e8bde8.png
+[image5]: http://static.mxnt.net/img/1500315-8bbfb0edf27b8ce7.png
+[image6]: http://static.mxnt.net/img/1500315-cedce0a496df3c74.png
+[image7]: http://static.mxnt.net/img/1500315-e2f6331d9f1a960e.png
+[image8]: http://static.mxnt.net/img/1500315-83fc5339890ff1f7.png
+[image9]: http://static.mxnt.net/img/1500315-95e8d3492d9ad9bb.png
+[image10]: http://static.mxnt.net/img/1500315-a7f3503e0c708b8d.png
+[image11]: http://static.mxnt.net/img/1500315-174c4c96c1b7ff91.png
+[image12]: http://static.mxnt.net/img/1500315-817e044ac869be24.png
+[image13]: http://static.mxnt.net/img/1500315-6a9274535cf2f280.png
 
 [link1]: https://junruchen.github.io/css/demo/css-flex-demo.html
 [link2]: https://github.com/junruchen/junruchen.github.io/wiki/CSS-Flex%E5%B8%83%E5%B1%80%E5%B8%B8%E8%A7%81%E5%BA%94%E7%94%A8
