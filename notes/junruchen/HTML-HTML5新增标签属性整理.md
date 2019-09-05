@@ -237,7 +237,7 @@ HTML5增加了主要增加了一些结构标签，媒体标签，表单标签以
 
 script标签async与defer属性的区别(蓝色：js脚本加载的时间；红色：js脚本执行的时间；绿色：html解析的时间)：
 
-![示例图](../assets/1500315-3321dd314dd75034.png) 
+![示例图](http://static.mxnt.net/img/1500315-3321dd314dd75034.png) 
 ```
 1. 没有async与defer参数时，浏览器会立即加载并执行js脚本，按照文档的顺序依次执行；
 2. defer：文档的加载与js脚本的加载同时执行，等文档所有元素解析完成后，DomContentLoaded事件触发致歉才执行js脚本

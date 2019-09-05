@@ -97,7 +97,7 @@ DOM树构建完成(DOMContentLoaded)
 
 9、script标签的defer与async属性的不同点
 
-![示例图](../assets/1500315-3321dd314dd75034.png)
+![示例图](http://static.mxnt.net/img/1500315-3321dd314dd75034.png)
 
 ```
 * 无defer或者async属性时，按照文档自上而下解析，当解析到script元素时，立即加载，且等到执行完成后继续解析DOM

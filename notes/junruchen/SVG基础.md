@@ -33,7 +33,7 @@ SVG中坐标系的特点：
 * y轴向下
 * 顺时针方向的角度为正值
 
-![坐标系.png](../assets/1500315-3ca092074e1f6901.png)
+![坐标系.png](http://static.mxnt.net/img/1500315-3ca092074e1f6901.png)
 
 另外要注意：元素的所有操作都是相对自身坐标系进行的
 
@@ -70,7 +70,7 @@ foreignObject元素通常被用来在**svg**代码中嵌入html节点。注意�
 
 与svg实际大小的关系如下：
 
-![viewBox](../assets/1500315-f100056d938a38fc.png)
+![viewBox](http://static.mxnt.net/img/1500315-f100056d938a38fc.png)
 
 如上图所示，用户可以看到的部分是蓝色的星星，而星星的另一侧是看不到的。
 
@@ -81,15 +81,15 @@ viewBox的使用案例：
   <rect x="30" y="30" width="100" height="100" fill="#fb3" stroke="none"></rect>
 </svg>
 ```
-![rectDemo1.png](../assets/1500315-ce81e58af70c7f1e.png)
+![rectDemo1.png](http://static.mxnt.net/img/1500315-ce81e58af70c7f1e.png)
 
 2) 增加视野viewBox  `viewBox='0 0 100 100'`，相当于用户只能看到SVG视图中viewBox定义的区域，即下图红色框内区域：
 
-![rectDemo3.png](../assets/1500315-c9de288eae1d2da5.png)
+![rectDemo3.png](http://static.mxnt.net/img/1500315-c9de288eae1d2da5.png)
 
 最终效果图：
 
-![rectDemo2.png](../assets/1500315-2def1cf878c9fd83.png)
+![rectDemo2.png](http://static.mxnt.net/img/1500315-2def1cf878c9fd83.png)
 
 ### 3.  preserveaspectRatio
 作用于viewBox，取值：`[参数值 | none]`有两个参数，第一个参数用来控制viewBox的对齐方式，第二个参数控制viewBox的缩放方式。另外：`none` 表示变形以充分适应svg
@@ -109,7 +109,7 @@ viewBox的使用案例：
 
 示例图：
 
-![preserveaspectRatio.png](../assets/1500315-2f9fdad679a6184b.png)
+![preserveaspectRatio.png](http://static.mxnt.net/img/1500315-2f9fdad679a6184b.png)
 
 1. 图1：红色区域为不设置preserveaspectRatio时的可视区域；
 2. 图2: 采用与x轴左边对齐、与y轴上边缘对齐的方式，保持纵横比缩放；
@@ -153,11 +153,11 @@ SVG支持使用**css选择器**给元素添加样式，如：
 * stroke-opacity：边框透明度，取值`[ 0, 1 ]`
 * stroke-linecap：单条线端点样式，一般应用于直线或者路径， 取值：`[ butt | square | round ]`，分别是对接、方形和圆形
 
-![linecapDemo.png](../assets/1500315-c91ffabd972246e9.png)
+![linecapDemo.png](http://static.mxnt.net/img/1500315-c91ffabd972246e9.png)
 
 * stroke-dasharray：虚线边框，可设置每段虚线的长度和间隔，之间使用逗号分隔或者空格分隔，如：`stroke-dasharray="10, 5, 5, 10"`
 
-![dasharrayDemo.png](../assets/1500315-28e03515f3eaf001.png)
+![dasharrayDemo.png](http://static.mxnt.net/img/1500315-28e03515f3eaf001.png)
 
 * stroke-dashoffset：设置虚线描边偏移量，使图案向前移动，如：
 
@@ -173,17 +173,17 @@ SVG支持使用**css选择器**给元素添加样式，如：
 ```
 虚线的样式为` 20 5 5 10`，偏移量为`10`，根据下图可发现第二个虚线，整体向前移动了10个单位
 
-![dashoffsetDemo.png](../assets/1500315-e561ca1069e5faab.png)
+![dashoffsetDemo.png](http://static.mxnt.net/img/1500315-e561ca1069e5faab.png)
 
 
 * stroke-linejoin：两条线段之间衔接点的样式，取值：`[ miter | round | bevel ]`，分别是尖角(图左一)、圆角(图左二)和斜角(图左三)
 
-![linejoinDemo.png](../assets/1500315-636f967fd4936a85.png)
+![linejoinDemo.png](http://static.mxnt.net/img/1500315-636f967fd4936a85.png)
 
 * stroke-miterlimit：默认值`4`，当`miterLength / stroke-width < stroke-miterlimit`时，`stroke-linejoin`值会变成换成`bevel`斜角。如下图中，stroke-width为15，根据计算公式，miterLength ／ stroke-width 约等于5.2，即当`stroke-miterlimit`小于6时，stroke-linejoin值会变成bevel斜角。
 
-![miterlimitdDemo1.png](../assets/1500315-f46d7237efb72267.png)
-![miterlimitdDemo2.png](../assets/1500315-dc554e638171b8c1.png)
+![miterlimitdDemo1.png](http://static.mxnt.net/img/1500315-f46d7237efb72267.png)
+![miterlimitdDemo2.png](http://static.mxnt.net/img/1500315-dc554e638171b8c1.png)
 
 示例代码：
 
@@ -218,7 +218,7 @@ SVG支持使用**css选择器**给元素添加样式，如：
 * transform-origin：同css，设置旋转等操作中心
 * rotate：设置文字元素的旋转角度，正值为顺时针旋转，**注意区分rotate与transform中的rotate**，如：`rotate="30"`
 
-![rotateDemo.png](../assets/1500315-207494bd029abe3f.png)
+![rotateDemo.png](http://static.mxnt.net/img/1500315-207494bd029abe3f.png)
 
 而transform中的rotate是对整个元素进行旋转操作。
 

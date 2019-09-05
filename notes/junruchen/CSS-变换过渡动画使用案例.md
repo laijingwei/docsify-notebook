@@ -11,7 +11,7 @@
 
 考察：animation基本属性值
 
-![demo-1.png](../assets/1500315-582e58f2c40d7c76.png)
+![demo-1.png](http://static.mxnt.net/img/1500315-582e58f2c40d7c76.png)
 
 [点击查看效果](https://junruchen.github.io/css/demo/css-animation-z-move.html)
 
@@ -77,7 +77,7 @@
 
 clip语法：rect(number number number number)，依据上-右-下-左的顺序剪裁，如设置为auto则该边不剪裁。
 
-![demo-2.png](../assets/1500315-790af22f20bcb0f7.png)
+![demo-2.png](http://static.mxnt.net/img/1500315-790af22f20bcb0f7.png)
 
 [点击查看效果](https://junruchen.github.io/css/demo/css-animation-line-move.html)
 
@@ -141,7 +141,7 @@ clip语法：rect(number number number number)，依据上-右-下-左的顺序�
 ```
 效果：
 
-![3.png](../assets/1500315-fc146f7b8bd96683.png)
+![3.png](http://static.mxnt.net/img/1500315-fc146f7b8bd96683.png)
 
 * 借助伪元素盖住右侧背景，且需要设置**圆角**( [Border详解](https://github.com/junruchen/junruchen.github.io/wiki/CSS-Border) )。
 * 更改旋转中心
@@ -237,7 +237,7 @@ clip语法：rect(number number number number)，依据上-右-下-左的顺序�
 
 效果图：
 
-![loading.png](../assets/1500315-3e283ecf764fb9b7.png)
+![loading.png](http://static.mxnt.net/img/1500315-3e283ecf764fb9b7.png)
 
 [预览效果](https://junruchen.github.io/css/demo/css-animation-loading.html)
 
@@ -253,7 +253,7 @@ dom结构：
 ```
 * item-right, 右侧需设置渐变色背景且为半圆形，选择一个灰色作为渐变色的中间点，这里选择的是#666，效果图如下：
 
-![item-right.png](../assets/1500315-cac7cfe2fbdf9126.png)
+![item-right.png](http://static.mxnt.net/img/1500315-cac7cfe2fbdf9126.png)
 
 代码：
 ```

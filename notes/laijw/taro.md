@@ -7,6 +7,7 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Radio, Button } from '@tarojs/components'
 import { connect } from '@tarojs/redux'
 import {AtIcon, AtTabs, AtTabsPane, AtFloatLayout, AtAvatar, AtAtList, AtListItem} from "taro-ui"
+import { Toast } from '../../../utils/notify'
 ```
 
 ## Redux Connect

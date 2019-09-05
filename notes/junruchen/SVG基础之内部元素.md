@@ -12,7 +12,7 @@
 
 示例图：
 
-![rectDemo.png](../assets/1500315-31df3693806db8e5.png)
+![rectDemo.png](http://static.mxnt.net/img/1500315-31df3693806db8e5.png)
 
 示例代码如下：
 ```
@@ -35,7 +35,7 @@
 
 示例图：
 
-![circleDemo.png](../assets/1500315-938e60b15a3bf859.png)
+![circleDemo.png](http://static.mxnt.net/img/1500315-938e60b15a3bf859.png)
 
 示例代码如下：
 ```
@@ -53,7 +53,7 @@
 
 示例图：
 
-![ellipseDemo.png](../assets/1500315-b29604550ab6c5a5.png)
+![ellipseDemo.png](http://static.mxnt.net/img/1500315-b29604550ab6c5a5.png)
 
 示例代码如下：
 ```
@@ -89,7 +89,7 @@
 
 示例图：
 
-![demo.png](../assets/1500315-51374f4f24f990e6.png)
+![demo.png](http://static.mxnt.net/img/1500315-51374f4f24f990e6.png)
 
 示例代码如下：
 ```
@@ -129,7 +129,7 @@
 
 示例图：
 
-![demo.png](../assets/1500315-2a522d6bae797328.png)
+![demo.png](http://static.mxnt.net/img/1500315-2a522d6bae797328.png)
 
 示例代码如下：
 ```
@@ -164,7 +164,7 @@
 
 示例图：
 
-![demo.png](../assets/1500315-5bf35f95531be178.png)
+![demo.png](http://static.mxnt.net/img/1500315-5bf35f95531be178.png)
 
 示例代码：
 ```
@@ -174,7 +174,7 @@
 ```
 分析：起点坐标（50，50），终点坐标（150，50），角度为0。角度弧线大小 large-arc-flag为1，选择大弧度，根据下面分析图，即选择红色的弧线，又绘制方向sweep-flag为0，为逆时针，即从起点沿逆时针防线绘制到终点，所以红色弧线位于下方。
 
-![分析图](../assets/1500315-7bd11452437008f6.png)
+![分析图](http://static.mxnt.net/img/1500315-7bd11452437008f6.png)
 
 注意：当 (起点与终点之间的直线距离／2) > (椭圆的水平半径) 时，角度为0的情况下，此时椭圆会等比放大，到相等为止。
 
@@ -189,7 +189,7 @@
 
 示例图：
 
-![textDemo.png](../assets/1500315-67ce79f2ebda5ec5.png)
+![textDemo.png](http://static.mxnt.net/img/1500315-67ce79f2ebda5ec5.png)
 
 示例代码如下：
 ```
@@ -211,7 +211,7 @@
 
 效果图：
 
-![textpathDemo.png](../assets/1500315-22a4f32af60d8e90.png)
+![textpathDemo.png](http://static.mxnt.net/img/1500315-22a4f32af60d8e90.png)
 
 示例代码如下：
 ```
@@ -230,7 +230,7 @@
 `use`标签用来克隆其他元素，克隆后的元素不能修改样式。
 示例图：
 
-![useDemo.png](../assets/1500315-b28cc14485d07e15.png)
+![useDemo.png](http://static.mxnt.net/img/1500315-b28cc14485d07e15.png)
 
 示例代码：
 ```
@@ -294,16 +294,16 @@
 ```
 分析图：
 
-![clipPathDemo.png](../assets/1500315-edfb2ffe237735a7.png)
+![clipPathDemo.png](http://static.mxnt.net/img/1500315-edfb2ffe237735a7.png)
 
 最终效果图：
 
-![clipPathDemo2.png](../assets/1500315-6d7664a8541af973.png)
+![clipPathDemo2.png](http://static.mxnt.net/img/1500315-6d7664a8541af973.png)
 ###  5. tspan元素
 类似`span`标签，如果想为`text`内文字单独设计样式，可使用 `tspan`标签
 示例图：
 
-![tspanDemo.png](../assets/1500315-ee713e3025e95550.png)
+![tspanDemo.png](http://static.mxnt.net/img/1500315-ee713e3025e95550.png)
 
 示例代码：
 ```
@@ -332,7 +332,7 @@ target="_blank">
 可依附于`<path> <line> <polyline> <polygon>`元素上，写在`<des></des>`标签内部，常见的用法是为线段添加箭头。当然也可以为图形元素添加其他内容(如终点处添加圆形、矩形等)
 示例图：
 
-![markDemo1.png](../assets/1500315-482846a6a64c93d1.png)
+![markDemo1.png](http://static.mxnt.net/img/1500315-482846a6a64c93d1.png)
 
 示例代码如下：
 ```
@@ -368,7 +368,7 @@ target="_blank">
 
 分析图：
 
-![分析图.png](../assets/1500315-880da83d8875dac7.png)
+![分析图.png](http://static.mxnt.net/img/1500315-880da83d8875dac7.png)
 
 在使用`marker`绘制的箭头时，可使用`marker-start`，`marker-mid`，`marker-end`来控制箭头的位置。
 * marker-start：路径起点处绘制箭头
@@ -377,7 +377,7 @@ target="_blank">
 
 多个箭头效果图：
 
-![markerDemo2.png](../assets/1500315-420678fef2844d8f.png)
+![markerDemo2.png](http://static.mxnt.net/img/1500315-420678fef2844d8f.png)
 
 代码：
 ```
@@ -410,7 +410,7 @@ target="_blank">
 
 示例图：
 
-![patternDemo.png](../assets/1500315-d2c2c16c5c68252a.png)
+![patternDemo.png](http://static.mxnt.net/img/1500315-d2c2c16c5c68252a.png)
 
 代码：
 ```
@@ -473,7 +473,7 @@ mode="normal" />
 ```
 效果图：
 
-![filter.png](../assets/1500315-04436afc2b62e5eb.png)
+![filter.png](http://static.mxnt.net/img/1500315-04436afc2b62e5eb.png)
 
 ### 1. feBlend
 ### 2. feColorMatrix
@@ -501,7 +501,7 @@ mode="normal" />
 
 示例图：
 
-![linearGradientDemo.png](../assets/1500315-ff531bcdfdf85fd1.png)
+![linearGradientDemo.png](http://static.mxnt.net/img/1500315-ff531bcdfdf85fd1.png)
 示例代码：
 ```
 <svg>
@@ -520,7 +520,7 @@ mode="normal" />
 * x1 y1 x2 y2：定义渐变的方向
 * gradientUnits：用来控制x1 y1 x2 y2的参照对象，取值：[objectBoundingBox | userSpaceOnUse]，objectBoundingBox：默认值，表示参考图形自身坐标系计算；userSpaceOnUse表示参考原始坐标系计算。如下图，均用`x1="0" y1="0" x2="0" y2="10%"`，第一个使用`objectBoundingBox`参考自身坐标系，`y2="10%"`计算的数值大，所以渐变区域也要大。
 
-![gradientUnits.png](../assets/1500315-2d3d9c78b09fd24d.png)
+![gradientUnits.png](http://static.mxnt.net/img/1500315-2d3d9c78b09fd24d.png)
 
 * `stop`标签：`offset`用来指定渐变位置，`stop-color`用来指定该位置的颜色，`stop-opacity`用来控制颜色透明度，可以设置多个`stop`标签
 
@@ -531,11 +531,11 @@ mode="normal" />
 
 如 `x1="50%" x2="30%" y1="0%" y2="0%"`：
 
-![demo.png](../assets/1500315-0ac556ed9c39b1a9.png)
+![demo.png](http://static.mxnt.net/img/1500315-0ac556ed9c39b1a9.png)
 
 ### 2. 径向渐变 radialGradient
 示例图：
-![demo2.png](../assets/1500315-109844b7e83c226a.png)
+![demo2.png](http://static.mxnt.net/img/1500315-109844b7e83c226a.png)
 
 示例代码：
 ```

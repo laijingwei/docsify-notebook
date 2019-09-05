@@ -26,7 +26,7 @@
 ```
 效果图：
 
-![固定宽高居中.png](../assets/1500315-2dd6238097b782e4.png)
+![固定宽高居中.png](http://static.mxnt.net/img/1500315-2dd6238097b782e4.png)
 
 #### 元素宽高不固定情况
 **使用 `transform` 结合 `top left` 实现。**
@@ -59,7 +59,7 @@ dom结构：
 ```
 效果图：
 
-![transform实现居中.png](../assets/1500315-63d6473a207e4083.png)
+![transform实现居中.png](http://static.mxnt.net/img/1500315-63d6473a207e4083.png)
 
 **使用 `flex` 布局**
 
@@ -122,7 +122,7 @@ dom结构：
 
 看图：
 
-![不同方式对比.png](../assets/1500315-8a2975d5ba307495.png)
+![不同方式对比.png](http://static.mxnt.net/img/1500315-8a2975d5ba307495.png)
 
 第一行采用的是 `word-wrap：break-word;` 的方式进行换行处理， 第二行采用的是 `word-break：break-all;` 。很明显这两种方式的区别是：
 
@@ -148,7 +148,7 @@ text-overflow: ellipsis;
 ```
 如：
 
-![单行文本溢出处理.png](../assets/1500315-662eca434caca372.png)
+![单行文本溢出处理.png](http://static.mxnt.net/img/1500315-662eca434caca372.png)
 
 **多行文本**
 
@@ -165,4 +165,4 @@ text-overflow: ellipsis;
 ```
 如：
 
-![多行文本溢出处理.png](../assets/1500315-144bae862fb47de6.png)
+![多行文本溢出处理.png](http://static.mxnt.net/img/1500315-144bae862fb47de6.png)
