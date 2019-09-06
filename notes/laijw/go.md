@@ -248,11 +248,40 @@ bc a -fmt:zip hello .
 bc x hello.zip
 ```
 
+## lefthook
+
+> [lefthook](https://github.com/Arkweid/lefthook)，基于 Go 的 Git Hook 管理器 
+
+```bash
+lefthook install
+lefthook add pre-commit
+```
+
+
+**lefthook.yml**
+
+```yml
+pre-commit:
+  commands:
+    linter:
+      run: yarn -v
+  scripts:
+    "done.js":
+      runner: node
+```
+
+**.lefthook\pre-commit\done.js**
+
+```js
+console.log("干的漂亮!!！");
+```
+
+
 
 
 ## 路线图
 
-![Roadmap]http://static.mxnt.net/img/golang-developer-roadmap-zh-CN.png)
+![Roadmap](http://static.mxnt.net/img/golang-developer-roadmap-zh-CN.png)
 
 ## 资源
 
