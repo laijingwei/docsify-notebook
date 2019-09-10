@@ -215,6 +215,40 @@ https://localhost:3000/
 ./frpc -c ./frpc.ini
 ```
 
+## shadowsocks
+
+> [shadowsocks](https://github.com/shadowsocks/shadowsocks-go)，网络代理工具，类似项目有 [dsvpn](https://github.com/jedisct1/dsvpn)
+
+**config.json**
+
+```bash
+{
+    "server":"server ip",
+    "server_port":8388,
+    "local_port":1080,
+    "local_address":"127.0.0.1",
+    "password":"123456",
+    "method": "aes-128-cfb",
+    "timeout":600
+}
+```
+
+**服务端**
+
+> 防火墙放行 `8388` 端口
+
+```bash
+./shadowsocks-server -c config.json
+```
+
+**客户端**
+
+> 防火墙放行 `1080` 端口
+
+```bash
+./shadowsocks-local -c config.json
+```
+
 ## Annie
 
 > [Annie](https://github.com/iawia002/annie)，视频下载工具
