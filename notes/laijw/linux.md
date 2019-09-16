@@ -23,6 +23,20 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.1.100
 ssh root@192.168.1.100
 ```
 
+### SpaceVim
+
+> [SpaceVim](https://github.com/SpaceVim/SpaceVim), 模块化的 Vim IDE
+
+```bash
+# 安装
+curl -sLf https://spacevim.org/cn/install.sh | bash
+
+# 安装结束后，初次打开 Vim 或者 gVim 时，SpaceVim 会自动下载并安装插件
+
+# 如果需要获取安装脚本的帮助信息，可以执行如下命令，包括定制安装、更新和卸载等
+curl -sLf https://spacevim.org/cn/install.sh | bash -s -- -h
+```
+
 ## yum
 
 ```bash
