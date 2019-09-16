@@ -102,6 +102,34 @@ gosuv start-server
 http://localhost:11313/
 ```
 
+**登录验证**
+
+`vi ~/.gosuv/config.yml`
+
+```yaml
+server:
+  httpauth:
+    enabled: true
+    username: admin
+    password: admin
+  addr: :8083
+  name: 10.10.99.177
+  master: ""
+notifications:
+  dingtalk:
+    groups:
+    - secret: c1b8032******************aa736a
+      mobile:
+      - "153********"
+client:
+  server_url: http://admin:admin@localhost:8083
+```
+
+**重启**
+
+`gosuv shutdown`
+`gosuv start-server`
+
 ## gohttpserver
 
 > [gohttpserver](https://github.com/codeskyblue/gohttpserver)，GO语言HTTP文件服务器
