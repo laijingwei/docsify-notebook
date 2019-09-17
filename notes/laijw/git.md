@@ -84,6 +84,16 @@ git config --global user.email "laijingwei1993@163.com"
 git config --global user.name "赖经纬"
 ```
 
+## Git Fork 仓库更新
+
+```bash
+# 将别人的仓库添加到你的上游远程，通常命名为upstream
+git remote add upstream http://192.168.1.100:3000/laijw/docsify-sdsf.git && git fetch upstream
+
+# 合并到 master
+git checkout master && git merge upstream/master
+```
+
 ## Git 提交三部曲
 
 ```bash
