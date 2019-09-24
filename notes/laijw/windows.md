@@ -130,6 +130,12 @@ EA7E-1153259
 —— END LICENSE ——
 ```
 
+**插件**
+
+- [Theme - Spacegray](https://packagecontrol.io/packages/Theme%20-%20Spacegray)
+- [Seti_UI - Packages - Package Control](https://packagecontrol.io/packages/Seti_UI)
+- [MarkdownEditing - Packages - Package Control](https://packagecontrol.io/packages/MarkdownEditing#key-bindings)
+
 ## PHPstorm 插件
 
 ```bash
